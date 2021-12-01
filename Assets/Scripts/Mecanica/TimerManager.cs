@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimerManager : MonoBehaviour
 {
     public Text timer;
-    public float timeLeft;
+    float timeLeft;
     public InputField cuadroTexto;
     private Text textoInput;
     private bool gameover;
@@ -17,6 +17,7 @@ public class TimerManager : MonoBehaviour
         textoInput = cuadroTexto.GetComponentInChildren<Text>();
         gameover = false;
         _mecanica = GameObject.FindGameObjectWithTag("Mecanica");
+        timeLeft = rndTime();
     }
 
     // Update is called once per frame
@@ -51,16 +52,18 @@ public class TimerManager : MonoBehaviour
         if (tiempoAMostrar < 0) {
             tiempoAMostrar = 0;
         }
-
-
-        
-
         //float minutos = Mathf.FloorToInt(tiempoAMostrar/60);
         float segundos = Mathf.FloorToInt(tiempoAMostrar % 60);
         float miliSegundos = tiempoAMostrar % 1 * 1000;
 
         timer.text = string.Format("{0:00}:{1:000}",segundos,miliSegundos);
     }
+
+    int rndTime()
+    {
+        return Random.Range(20,30); 
+    }
+
     public void setGameOver(bool flag)
     {
         gameover = flag;

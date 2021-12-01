@@ -13,8 +13,8 @@ public class PlayerInteractiveManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        box = player.GetComponent<BoxCollider2D>();
-        deskBox = desk.GetComponent<EdgeCollider2D>();
+        //box = player.GetComponent<BoxCollider2D>();
+       // deskBox = desk.GetComponent<EdgeCollider2D>();
 
     }
 }

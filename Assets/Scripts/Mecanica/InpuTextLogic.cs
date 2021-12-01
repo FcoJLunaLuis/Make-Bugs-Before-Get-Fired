@@ -44,6 +44,7 @@ public class InpuTextLogic : MonoBehaviour
         loadData();
         musica = GameObject.FindGameObjectWithTag("Musica");
         musica.GetComponent<AudioSource>().Pause();
+        scoreText.gameObject.SetActive(true);
     }
 
     // Start is called before the first frame update
@@ -112,6 +113,7 @@ public class InpuTextLogic : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Tutorial") == true)
         {
             flag = true;
+            scoreText.gameObject.SetActive(false);
         }
         return flag;
     }

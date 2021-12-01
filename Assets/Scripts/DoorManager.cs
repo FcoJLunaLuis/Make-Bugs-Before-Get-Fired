@@ -13,6 +13,7 @@ public class DoorManager : MonoBehaviour
     BoxCollider2D boxDoor;
 
     private int _horas;
+    private int errores;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class DoorManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         player = GameObject.FindGameObjectWithTag("Player");
         puntoInicial = GameObject.Find("PuntoInicialJugador");
 
@@ -31,7 +33,7 @@ public class DoorManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (_horas > 12)
+            if (errores > 6)
             {
                 SceneManager.LoadScene("Final");
             }
@@ -46,6 +48,7 @@ public class DoorManager : MonoBehaviour
     void loadData()
     {
         _horas = PlayerPrefs.GetInt("horas", 0);
+        errores = PlayerPrefs.GetInt("errores", 0);
     }
   
 }

@@ -9,6 +9,7 @@ TagManager:
   - Texto
   - Tutorial
   - Musica
+  - PopUp
   layers:
   - Default
   - TransparentFX

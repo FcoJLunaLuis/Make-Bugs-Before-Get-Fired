@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1253786680446777466}
   - component: {fileID: 8383901892227607740}
   - component: {fileID: 6667776879708590521}
+  - component: {fileID: 14403758619255021}
   m_Layer: 7
   m_Name: Desk
   m_TagString: Desk
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desk: {fileID: 1253786680446777468}
   mecanica: {fileID: 9123322500590379311, guid: 7a20992bd604d9c46aec8934bce879bd, type: 3}
+  popUp: {fileID: 4098423662011788871, guid: 28532e109c7f3974cb2e00eb4dd2c263, type: 3}
 --- !u!68 &8383901892227607740
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -143,3 +145,29 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 0
+--- !u!61 &14403758619255021
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253786680446777468}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09425247, y: 0.17055222}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5428572, y: 1.5428572}
+    newSize: {x: 3.6, y: 3.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.27717954, y: 0.25025064}
+  m_EdgeRadius: 0

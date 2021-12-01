@@ -13,19 +13,15 @@ public class IniciarVariables : MonoBehaviour
     private int _hora;
     private int _minutos;
 
-    public Text texto;
-
     // Start is called before the first frame update
     void Start()
     {
         aciertos = 0;
         erroes = 0;
         desk = 0;
-        numOficinas = 0;
+        //numOficinas = 0;
         _minutos = 0;
-        _hora = 0;
-        Debug.Log(Application.dataPath);
-        texto.text = Application.dataPath;
+        //_hora = 0;
         rndOffices();
         calcularHora();
     }
@@ -33,6 +29,7 @@ public class IniciarVariables : MonoBehaviour
     private void rndOffices()
     {
         _numOff = Random.Range(2, 4);
+        Debug.Log("We las oficinas son" + _numOff);
     }
 
     private void calcularHora()

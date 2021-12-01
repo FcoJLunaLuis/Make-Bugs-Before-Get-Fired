@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 9123322502190393185}
-  timeLeft: 30
+  timeLeft: 25
   cuadroTexto: {fileID: 9123322500860589384}
 --- !u!1 &9123322500860589386
 GameObject:
@@ -850,7 +850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9123322501738885541
 RectTransform:
   m_ObjectHideFlags: 0
